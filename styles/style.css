@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+
+font-size: 62.5%;
+}
+body{
+    background-color: rgb(183, 183, 219);
+    margin:0;
+    padding:0;
+}
+header{
+    width:100%;
+        top:0;
+        position: static;
+        z-index: 10;
+    }
+main{
+    overflow: hidden;
+}
+
+.navbar{
+    background-color: black;
+    text-align: center;
+    padding:15px;
+    
+    
+}
+.nav-icon img{
+    width:200px;
+    height:150px;
+    padding:5px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    transition: 1s;
+   transition-timing-function: linear;
+   
+}
+.nav-icon img:hover{
+   
+   
+    transform: rotate(360deg);
+}
+[class*="col-"]
+{
+    float:left;
+    padding:10px;
+}
+[class*="col-"]{
+    width:100%;
+}
+.nav-menu{
+    text-align: center;
+    font-size: 3em;
+    display:flex;
+    flex-direction: column;
+    
+}
+.nav-menu a{
+    color:white;
+    padding:15px;
+    display:block;
+    border-radius: 20px;
+    font-size: 1.2em;
+    margin: 1px auto;
+    
+}
+.nav-menu a:hover{
+    width:auto;
+    background-color: blanchedalmond;
+    color:black;
+    font-weight: bolder;
+}
+.navbar::after{
+    content: '';
+    display:table;
+    clear:both;
+}
+.banner{
+    background-color: rgb(79, 67, 67);
+    border:4px solid black;
+}
+
+
+.banner::after{
+    content: '';
+    display:table;
+    clear:both;
+}
+.details{
+    text-align: center;
+    font-size:1.8em;
+    color:rgb(232, 215, 194);
+
+}
+.details h1{
+    color:aqua;
+    font-size: 2em;
+    width:350px;
+    margin:1px auto;
+    background-color:rgb(111, 99, 81) ;
+    opacity: 0.8;
+    padding: 10px;
+    border: 1px solid rgba(163, 78, 9, 0.244);
+    border-radius: 3px;
+}
+.details p{
+    text-align: justify;
+    margin:auto auto;
+    padding:10px;
+    font-size:1.3em;
+}
+.image img{
+    height:400px;
+    width:100%;
+    border: 2px solid rgb(245, 190, 190);
+    border-radius: 6px;
+
+}
+.image img:hover{
+    transform: scale(1.01);
+}
+.row{
+    background-color: rgb(196, 185, 168);
+    text-align: center;
+    border: 5px solid black;
+    padding:10px;
+    
+    display: block;
+}
+.row h2{
+    font-size: 5em;
+    color:rgb(44, 17, 17);
+    background-color: rgba(112, 54, 10, 0.244);
+    width: 350px;
+    margin:1px auto;
+    opacity:.8;
+    border-radius: 5px;
+
+}
+.card{
+    background-color: rgb(112, 108, 108);
+    height:550px;
+    text-align: center;
+    border:2px solid gray;
+    border-radius: 8px;
+    overflow: auto;
+    padding:50px;
+    margin-top: 10px;
+    
+    
+}
+.card-title{
+    font-size: 3em;
+    font-weight: bolder;
+    border: 2px solid gray;
+    padding:10px;
+    width:300px;
+    margin:4px auto;
+    border-radius: 6px;
+    background-color: rgb(138, 122, 101);
+
+}
+.card-des{
+    border: 2px solid rgb(173, 92, 109);
+    font-size: 2.4em;
+    text-align: justify;
+    margin:2px;
+    padding:15px;
+    border-radius: 4px;
+    background-color: rgb(205, 161, 145);
+}
+.card:hover{
+    transform: scale(1.01);
+}
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.row1{
+    border: 5px solid black;
+    text-align: center;
+    background-color: rgba(31, 29, 29, 0.788);
+}
+.row1 h1{
+    font-size: 5em;
+    font-weight: bolder;
+    font-style: italic;
+    border:2px solid gold ;
+    margin:1px auto;
+    width:300px;
+    background-color: burlywood;
+    border-radius: 6px;
+    color:blue
+    padding:5px;
+}
+
+
+.blog{
+ background-color: rgb(114, 150, 138);   
+ border: 2px solid blue;
+ 
+ padding:15px;
+ 
+    
+ 
+}
+.bimg img{
+    height:350px;
+    width:100%;
+     border: 1px solid rgb(237, 218, 218);
+     border-radius: 5px;
+}
+.bdes{
+    width:100%;
+    height:550px;
+    overflow: auto;
+}
+.bdes h2{
+    font-size: 2.7em;
+    color: blue;
+    padding:8px;
+    background-color: rgb(138, 186, 186);
+    width:150px;
+    margin:1px auto;
+    border-radius: 10px;
+}
+.bdes h3{
+    font-size: 2.2em;
+    color:rgb(197, 25, 25);
+    padding:5px;
+}
+.bdes p{
+    font-size: 1.9em;
+    text-align: justify;
+    padding: 8px;
+    background-color: rgb(186, 160, 125);
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+.button{
+    width:120px;
+    height:60px;
+    border: 3px solid black;
+    font-size: 2em;
+    color:rgb(3, 3, 38);
+    background-color:goldenrod;
+    padding:5px;
+    margin: 6px;
+    border-radius: 15px;
+}
+.button:hover{
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+.row1::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.contact{
+
+    background-color: darkslategray;
+    border:4px solid black;
+}
+.contact h2{
+    text-align: center;
+    font-size: 5em;
+    border:2px solid gray;
+    padding:10px;
+    width: 200px;
+    margin:9px auto;
+    border-radius: 10px;
+    background-color: darkcyan;
+    color: blanchedalmond;
+
+}
+.form{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    margin: auto;
+    border:2px solid rgb(241, 213, 213);
+    padding:10px;
+    margin-top: 5px;
+    background-color:rgb(110, 165, 165) ;
+}
+
+.form label{
+    font-size: 2em;
+    text-align: center;
+    padding:6px;
+    color:blue;
+    font-weight: 800;
+    margin:5px;
+}
+input {
+width:100%;
+height:40px;
+border: 2px solid red;
+}
+::-webkit-input-placeholder{
+    text-align: center;
+}
+textarea{
+    border:2px solid greenyellow;
+    width:100%;
+    height:80px;
+}
+.button1{
+    width:150px;
+    height:50px;
+    border:2px solid burlywood;
+    padding:15px;
+    font-size: 1.8em;
+    color:brown;
+    background-color: rgb(42, 126, 129);
+    margin:5px auto;
+    border-radius: 20px;
+}
+.form::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: black;
+
+}
+.footer p{
+    margin:0;
+    font-size:3.5em;
+    color:rgb(135, 79, 6);
+    text-align:center ;
+    padding:10px;
+}
+
+.footer span{
+    color:red;
+    font-size: 1.4em;
+    text-align: center;
+}
